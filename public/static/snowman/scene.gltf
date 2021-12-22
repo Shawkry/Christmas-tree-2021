@@ -1,0 +1,418 @@
+{
+  "accessors": [
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 4073,
+      "max": [
+        0.95089137554168701,
+        3.7580065727233887,
+        1.6071321964263916
+      ],
+      "min": [
+        -1.2354140281677246,
+        0.0075085991993546486,
+        -1.6415828466415405
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 48876,
+      "componentType": 5126,
+      "count": 4073,
+      "max": [
+        0.9999966025352478,
+        0.99978137016296387,
+        0.99988782405853271
+      ],
+      "min": [
+        -1,
+        -1,
+        -1
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 4073,
+      "max": [
+        0.99999970197677612,
+        0.99949723482131958,
+        0.99999988079071045,
+        1
+      ],
+      "min": [
+        -1,
+        -0.99999487400054932,
+        -0.99999964237213135,
+        -1
+      ],
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 4073,
+      "max": [
+        0.98927098512649536,
+        0.99500000476837158
+      ],
+      "min": [
+        0.010728999972343445,
+        0.004999999888241291
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "componentType": 5125,
+      "count": 19548,
+      "max": [
+        4072
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 97752,
+      "componentType": 5126,
+      "count": 588,
+      "max": [
+        0.67795300483703613,
+        4.6170029640197754,
+        0.82059001922607422
+      ],
+      "min": [
+        -0.73585200309753418,
+        3.5699400901794434,
+        -0.58735501766204834
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 104808,
+      "componentType": 5126,
+      "count": 588,
+      "max": [
+        0.98147863149642944,
+        0.99677032232284546,
+        0.97624069452285767
+      ],
+      "min": [
+        -0.97765141725540161,
+        -0.99630129337310791,
+        -0.98532712459564209
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 65168,
+      "componentType": 5126,
+      "count": 588,
+      "max": [
+        0.98159092664718628,
+        0.99162578582763672,
+        0.98436540365219116,
+        1
+      ],
+      "min": [
+        -0.97761976718902588,
+        -0.99721032381057739,
+        -0.98206102848052979,
+        1
+      ],
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 32584,
+      "componentType": 5126,
+      "count": 588,
+      "max": [
+        0.99500000476837158,
+        0.99322998523712158
+      ],
+      "min": [
+        0.004999999888241291,
+        0.0067699998617172241
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 78192,
+      "componentType": 5125,
+      "count": 858,
+      "max": [
+        587
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR"
+    }
+  ],
+  "asset": {
+    "extras": {
+      "author": "junaidamin (https://sketchfab.com/junaidamin)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/models/1010d971cfe44b1aa8ff9b8350048f95",
+      "title": "Snowman"
+    },
+    "generator": "Sketchfab-3.18.6",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 81624,
+      "byteOffset": 0,
+      "name": "floatBufferViews",
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 37288,
+      "byteOffset": 81624,
+      "byteStride": 8,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 111864,
+      "byteOffset": 118912,
+      "byteStride": 12,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 74576,
+      "byteOffset": 230776,
+      "byteStride": 16,
+      "name": "floatBufferViews",
+      "target": 34962
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 305352,
+      "uri": "scene.bin"
+    }
+  ],
+  "images": [
+    {
+      "uri": "textures/snowmanhatsnowmanhatmat1_baseColor.png"
+    },
+    {
+      "uri": "textures/snowmansnowmanmat1_baseColor.png"
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "name": "snowmansnowmanmat1",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "baseColorTexture": {
+          "index": 1,
+          "texCoord": 0
+        },
+        "metallicFactor": 0,
+        "roughnessFactor": 0.59999999999999998
+      }
+    },
+    {
+      "doubleSided": true,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "name": "snowmanhatsnowmanhatmat1",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "baseColorTexture": {
+          "index": 0,
+          "texCoord": 0
+        },
+        "metallicFactor": 0,
+        "roughnessFactor": 0.59999999999999998
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "snowman:snowmanmesh_snowman:snowmanmat1_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 0,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 4,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "snowmanhat:snowmanhatmesh_snowmanhat:snowmanhatmat1_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 6,
+            "POSITION": 5,
+            "TANGENT": 7,
+            "TEXCOORD_0": 8
+          },
+          "indices": 9,
+          "material": 1,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "name": "RootNode (gltf orientation matrix)",
+      "rotation": [
+        -0.70710678118654746,
+        -0,
+        -0,
+        0.70710678118654757
+      ]
+    },
+    {
+      "children": [
+        2
+      ],
+      "name": "RootNode (model correction matrix)"
+    },
+    {
+      "children": [
+        3
+      ],
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "name": "e7c61db2ae844ff0ab3cdabd6ae72cb1.fbx"
+    },
+    {
+      "children": [
+        4,
+        6
+      ],
+      "name": "RootNode"
+    },
+    {
+      "children": [
+        5
+      ],
+      "name": "snowman:snowmanmesh"
+    },
+    {
+      "mesh": 0,
+      "name": "snowman:snowmanmesh_snowman:snowmanmat1_0"
+    },
+    {
+      "children": [
+        7
+      ],
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        -0.0009773430647328496,
+        -0.074495203793048859,
+        -0.00065985915716737509,
+        1
+      ],
+      "name": "snowmanhat:snowmanhatmesh"
+    },
+    {
+      "mesh": 1,
+      "name": "snowmanhat:snowmanhatmesh_snowmanhat:snowmanhatmat1_0"
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "OSG_Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0
+    },
+    {
+      "sampler": 0,
+      "source": 1
+    }
+  ]
+}
+
