@@ -1,25 +1,29 @@
 <template>
   <div class="home">
+    <audio id="audio" ref="audio" loop >
+      <source src="@/assets/Merry Christmas Mr. Lawrence.mp3" type="audio/mpeg" />
+      <source src="@/assets/陈奕迅 - 圣诞结.mp3" type="audio/mpeg" />
+      Your browser does not support this audio format.
+    </audio>
     <div class="btn" style="right: 0px">
       <div @click="stopRotate()">
-        <img src="@/assets/播放2.png" alt="" v-if="stopRotateBool" />
-        <img src="@/assets/暂停播放.png" alt="" v-else />
-
-        {{}}
+        <img src="@/assets/播放2.png" alt v-if="stopRotateBool" />
+        <img src="@/assets/暂停播放.png" alt v-else />
+      </div>
+      <div @click="controlsAudio">
+        <img src="@/assets/音乐1.png" alt v-if="!audioStatus" />
+        <img src="@/assets/静音1.png" alt v-else />
       </div>
     </div>
     <div class="btn">
       <div @click="changeBox('tree')" :class="{ active: boxShow === 'tree' }">
-        <img src="@/assets/圣诞树.png" alt="" />圣诞树
+        <img src="@/assets/圣诞树.png" alt />圣诞树
       </div>
       <div @click="changeBox('ball')" :class="{ active: boxShow === 'ball' }">
-        <img src="@/assets/圣诞节水晶球.png" alt="" />雪花球
+        <img src="@/assets/圣诞节水晶球.png" alt />雪花球
       </div>
-      <div
-        @click="changeBox('snowman')"
-        :class="{ active: boxShow === 'snowman' }"
-      >
-        <img src="@/assets/线性雪人.png" alt="" />小雪人
+      <div @click="changeBox('snowman')" :class="{ active: boxShow === 'snowman' }">
+        <img src="@/assets/线性雪人.png" alt />小雪人
       </div>
     </div>
     <div class="tree canvasBox" v-if="boxShow === 'tree'">
@@ -66,7 +70,7 @@
 
 <script>
 import { ModelGltf } from 'vue-3d-model'
-import Snow from '../snow'
+// import Snow from '../snow'
 export default {
   name: "home",
   data() {
@@ -74,6 +78,7 @@ export default {
       boxShow: 'tree',
       bgAlpha: 0,
       stopRotateBool: false,
+      audioStatus: true,
       rotation: {
         x: 0,
         y: 0,
@@ -85,6 +90,7 @@ export default {
     }
   },
   mounted() {
+    this.controlsAudio()
   },
   methods: {
     onLoad() {
@@ -105,10 +111,30 @@ export default {
     stopRotate() {
       this.stopRotateBool = !this.stopRotateBool;
       this.rotate()
+    },
+    controlsAudio() {
+      let audio = this.$refs.audio;
+      this.audioStatus = audio.paused
+      if (this.audioStatus) {
+        audio.play();
+      } else {
+        audio.pause();
+      }
+      this.audioStatus = audio.paused
+    },
+    init() {
+      let audio = this.$refs.audio;
+      this.audioStatus = audio.paused
+      if (this.audioStatus) {
+        audio.play();
+      } else {
+        audio.pause();
+      }
+      this.audioStatus = audio.paused;
     }
   },
   components: {
-    Snow,
+    // Snow,
     ModelGltf
   }
 }
